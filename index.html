@@ -62,37 +62,36 @@
         </section>
 
 
-        <section id="data-table">
-            <h2>D3 · Accessible Data Table</h2>
-            <div class="table-region" role="region" aria-label="Replace with a specific table label" tabindex="0">
+        <section id="data-table" aria-labelledby="table-title">
+            <div class="section-kicker">D3</div>
+            <h2 id="table-title">Six landing missions, one widening surface footprint</h2>
+            <div class="table-region" role="region" aria-labelledby="table-caption" tabindex="0">
                 <table>
-                    <caption>Replace with an accurate table caption</caption>
+                    <caption id="table-caption">Apollo lunar surface activity, 1969-1972</caption>
                     <thead>
                         <tr>
-                            <th scope="col">Category</th>
-                            <th scope="col">Value A</th>
-                            <th scope="col">Value B</th>
-                            <th scope="col">Value C</th>
+                            <th scope="col">Mission</th>
+                            <th scope="col">Launch year</th>
+                            <th scope="col">Surface duration</th>
+                            <th scope="col">EVAs</th>
+                            <th scope="col">EVA time (hours)</th>
+                            <th scope="col">Surface samples returned (kgs)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">Replace</th>
-                            <td>—</td>
-                            <td>—</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Replace</th>
-                            <td>—</td>
-                            <td>—</td>
-                            <td>—</td>
-                        </tr>
+                        <tr><th scope="row">Apollo 11</th>
+                            <td>1969</td>
+                            <td>21.5</td>
+                            <td>1</td>
+                            <td>2.53</td>
+                            <td>21.5></td></tr>
                     </tbody>
                 </table>
             </div>
-            <p class="source-note">Add the data source and any transformation note.</p>
+            <p class="source-note"> Will add the data source later.</p>
         </section>
+        
+        
         <section id="vector-story">
             <h2>D4 · Responsive SVG</h2>
             <svg class="story-graphic" viewBox="0 0 800 400" role="img" aria-labelledby="graphic-title graphic-desc">
