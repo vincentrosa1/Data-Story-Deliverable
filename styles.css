@@ -94,31 +94,49 @@ figcaption,.source-note{
     margin-top:.75rem;
     color:var(--color-muted);
 }
+
 .table-region{
     overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    margin-top:1rem;
 }
 table{
     width:100%;
-    min-width:46rem;
-    border-collapse:collapse;
+    min-width:58rem;
+    border-collapse:separate;
+    border-spacing:0;
+    background:var(--color-surface-2);
 }
 caption{
     text-align:left;
     font-weight:700;
-    padding:.75rem 0;
+    padding:0 0 .75rem;
+    color:#fff;
 }
 th,td{
-    padding:.75rem;
-    border:1px solid var(--color-border);
+    padding:.8rem .75rem;
+    border-bottom:1px solid var(--color-border);
     text-align:left;
+    vertical-align:top;
+    white-space:nowrap;
 }
-thead{
-    background:#f1f1f1;
+thead th{
+    background:#12243a;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+tbody th{
+    color:#fff;
+    background:#0e1c2f;
 }
 .table-region:focus-visible{
     outline:.2rem solid var(--color-accent);
-    outline-offset:.2rem;
+    outline-offset:.25rem;
+    border-radius:.2rem;
 }
+
 .graphic-surface{
     fill:#f1f1f1;
 }
